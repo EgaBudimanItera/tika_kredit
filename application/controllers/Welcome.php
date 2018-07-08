@@ -10,7 +10,9 @@ class Welcome extends CI_Controller {
 
 	public function index(){
 		$data=array(
-			'page'=>'welcome_message'
+			'page'=>'welcome_message',
+			
+			'link'=>'beranda'
 		);
 		$this->load->view('partials/front/wrapper',$data);
 	}

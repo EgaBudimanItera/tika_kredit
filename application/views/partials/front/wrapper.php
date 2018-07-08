@@ -1,5 +1,11 @@
 <?php
   $this->load->view('partials/front/header');
-  $this->load->view('partials/front/slider');
+  if($link=='beranda'){
+  	$this->load->view('partials/front/slider');	
+  }
+  else{
+
+  }
+  
   $this->load->view('partials/front/isi');
   $this->load->view('partials/front/footer');

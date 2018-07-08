@@ -6,7 +6,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title> Kredit </title>
+	<title>Pengajuan Kredit Nasabah</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -53,8 +53,8 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo base_url() ?>Adm_pass"><i class="icon-user"></i> Password</a></li>
-                                <li><a href="Welcome/Logout"><i class="icon-key"></i> Log Out</a></li>
+                                <li><a href="#"><i class="icon-user"></i> Ganti Password</a></li>
+                                <li><a href="#"><i class="icon-key"></i> Log Out</a></li>
                             </ul>
                         </li>
                         <!-- END USER LOGIN DROPDOWN -->

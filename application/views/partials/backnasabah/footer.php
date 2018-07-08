@@ -1,3 +1,5 @@
+</div>
+<!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
         <div id="footer">
             <?php echo date("Y"); ?> &copy; .
