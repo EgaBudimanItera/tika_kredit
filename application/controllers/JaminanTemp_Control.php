@@ -10,8 +10,8 @@ class JaminanTemp_Control extends CI_Controller {
 	}
     //pages back
     public function index(){
-      //$idnasabah=$this->session->userdata('idnasabah');
-      $idnasabah='N201800001';
+      $idnasabah=$this->session->userdata('idnasabah');
+      // $idnasabah='N201800001';
       $data = array(
             'listjaminan' =>$this->DetJaminanTemp_Model->list_detjaminantemp($idnasabah),
             'script'=>'script/pembiayaan_script',

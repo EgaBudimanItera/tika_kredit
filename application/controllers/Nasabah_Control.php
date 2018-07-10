@@ -86,7 +86,8 @@ class Nasabah_Control extends CI_Controller {
 
     //pages backnasabah
     public function profilnasabah(){
-      $idnasabah='N201800001';//ambil dari login nantinya
+      $idnasabah=$this->session->userdata('idnasabah');
+      // $idnasabah='N201800001';//ambil dari login nantinya
       $data = array(
             'page' => 'nasabah/nasabah/profilnasabah',
             'link' => 'nasabah',
@@ -324,6 +325,32 @@ class Nasabah_Control extends CI_Controller {
           '<div class="alert alert-warning"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a><strong>Warning!</strong> Data gagal disetujui!</div>'
         );
         redirect(base_url().'nasabah_control/detailcalonnasabah'.$idnasabah); //location
+      }
+    }
+
+    public function authnasabah(){
+      $namauser=$this->input->post('namauser',true);
+      $password=md5($this->input->post('password',true));
+      $where=array(
+            'namauser'=>$namauser,
+            'password'=>$password,
+      );
+      $cek=$this->Nasabah_Model->cek_login($where)->num_rows(); 
+      if($cek!=0){
+        $data_session = array(
+            'namauser' => $namauser,
+            'idnasabah'=>$this->Nasabah_Model->cek_login($where)->row()->idnasabah,
+            'status' => "login",
+            
+        );
+
+        $this->session->set_userdata($data_session);
+        echo '<script>alert("Selamat Datang "'.$this->Nasabah_Model->cek_login($where)->row()->nama.')</script>';
+        echo'<script>window.location.href="'.base_url().'nasabah_control/profilnasabah";</script>';
+      }
+      else{
+        echo '<script>alert("Maaf, Nama User / Password Anda Salah")</script>';
+        echo'<script>window.location.href="'.base_url().'loginnasabah";</script>';
       }
     }
 }

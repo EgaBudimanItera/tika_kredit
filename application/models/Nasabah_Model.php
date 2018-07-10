@@ -19,6 +19,12 @@ class Nasabah_Model extends CI_Model {
         return true;
     }
 
+    function cek_login($where){      
+        return $this->db->get_where('nasabah',$where);
+    }
+
+    
+    
     function list_calonnasabah(){
          $this->db->select('*');
          $this->db->from('nasabah');

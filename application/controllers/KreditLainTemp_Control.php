@@ -10,8 +10,8 @@ class KreditLainTemp_Control extends CI_Controller {
 	}
     //pages back
     public function index(){
-      //$idnasabah=$this->session->userdata('idnasabah');
-      $idnasabah='N201800001';
+      $idnasabah=$this->session->userdata('idnasabah');
+      // $idnasabah='N201800001';
       $data = array(
             'listkreditlain' =>$this->DetKreditLainTemp_Model->list_detkreditlaintemp($idnasabah),
             'script'=>'script/pembiayaan_script',

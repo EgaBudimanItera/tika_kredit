@@ -10,8 +10,8 @@ class SyaratTemp_Control extends CI_Controller {
 	}
     //pages back
     public function index(){
-      //$idnasabah=$this->session->userdata('idnasabah');
-      $idnasabah='N201800001';
+      $idnasabah=$this->session->userdata('idnasabah');
+      // $idnasabah='N201800001';
       $data = array(
             'listsyarat' =>$this->DetSyaratTemp_Model->list_detsyarattemp($idnasabah),
             'script'=>'script/pembiayaan_script',

@@ -53,8 +53,8 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo base_url() ?>Adm_pass"><i class="icon-user"></i> Password</a></li>
-                                <li><a href="Welcome/Logout"><i class="icon-key"></i> Log Out</a></li>
+                                <li><a href="<?php echo base_url() ?>secure/formubahpasswordnasabah"><i class="icon-user"></i> Password</a></li>
+                                <li><a href="<?=base_url()?>secure/logoutnasabah"><i class="icon-key"></i> Log Out</a></li>
                             </ul>
                         </li>
                         <!-- END USER LOGIN DROPDOWN -->

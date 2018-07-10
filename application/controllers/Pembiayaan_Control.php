@@ -62,7 +62,8 @@ class Pembiayaan_Control extends CI_Controller {
 
     //pages backnasabah
     public function pengajuan(){
-        $idnasabah='N201800001';//ambil dari login nantinya
+        $idnasabah=$this->session->userdata('idnasabah');
+        // $idnasabah='N201800001';//ambil dari login nantinya
         $data = array(
             'page' => 'nasabah/pembiayaan/datapengajuan',
             'link' => 'pengajuan',
@@ -73,7 +74,8 @@ class Pembiayaan_Control extends CI_Controller {
     }
 
     public function listditerima(){
-      $idnasabah='N201800001';//ambil dari login nantinya
+      // $idnasabah='N201800001';//ambil dari login nantinya
+      $idnasabah=$this->session->userdata('idnasabah');
       $data = array(
             'page' => 'nasabah/histori/pembiayaanditerima',
             'link' => 'diterima',
@@ -84,7 +86,8 @@ class Pembiayaan_Control extends CI_Controller {
     }
 
     public function listditolak(){
-      $idnasabah='N201800001';//ambil dari login nantinya
+      // $idnasabah='N201800001';//ambil dari login nantinya
+      $idnasabah=$this->session->userdata('idnasabah');
       $data = array(
             'page' => 'nasabah/histori/pembiayaanditolak',
             'link' => 'ditolak',
@@ -114,7 +117,8 @@ class Pembiayaan_Control extends CI_Controller {
 
     //crud backnasabah
     public function tambahpengajuan(){
-      $idnasabah='N201800001';//ambil dari login nantinya
+      // $idnasabah='N201800001';//ambil dari login nantinya
+      $idnasabah=$this->session->userdata('idnasabah');
       //file
       $config ['upload_path'] = './assets/file_upload/';
       $config ['allowed_types'] = 'zip|rar';
