@@ -35,7 +35,7 @@
                 </span>
             </div>
             <div class="widget-body">
-              <?php echo $this->session->flashdata("status"); ?>
+              <div id="info-alert"><?=@$this->session->flashdata('msg')?></div>
               <table class="table table-striped table-bordered" id="sample_1">
                 <thead>
                   <tr>

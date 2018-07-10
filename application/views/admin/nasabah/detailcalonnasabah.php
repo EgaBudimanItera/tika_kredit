@@ -28,7 +28,7 @@
     <!-- END PAGE HEADER-->
     <!-- BEGIN PAGE CONTENT-->
     <div id="page" class="dashboard">                                                              
-      <form role="form" method="post" action="#" >
+      <form role="form" method="post" action="<?=base_url()?>nasabah_control/terimanasabah" >
       <div class="row-fluid">  
           <!-- identitas pemohon -->
           <div class="span6">
@@ -42,11 +42,12 @@
                   </span>
               </div>
               <div class="widget-body">
+                <div id="info-alert"><?=@$this->session->flashdata('msg')?></div>
                 A.Data Diri
                 <table class="table table-striped table-bordered table-advance table-hover">
                   <tr>
                     <td class="span3">ID Pemohon</td>
-                    <td><?=$isinasabah->idnasabah?></td>
+                    <td><?=$isinasabah->idnasabah?><input type="hidden" class="form-control span12" value="<?=$isinasabah->idnasabah?>" name="idnasabah" /></td>
                   </tr> 
                   <tr>
                     <td >Nama Pemohon</td>

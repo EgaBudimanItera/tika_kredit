@@ -121,9 +121,9 @@
                     <label for="subject" accesskey="S">Status Kepemilikan Rumah*</label>
                     <select class="form-control" style="color:black" name="hakmilikrumah" required="">
                       <option value="">Pilih</option>
-                      <option value="Sendiri">Sendiri</option>
-                      <option value="Orang Tua">Orang Tua</option>
-                      <option value="Sewa">Sewa</option>
+                      <option value="sendiri">Sendiri</option>
+                      <option value="orang Tua">Orang Tua</option>
+                      <option value="sewa">Sewa</option>
                     </select>
                   </div>
                 </div> 
@@ -201,9 +201,9 @@
                     <label for="subject" accesskey="S">Tempat Usaha</label>
                     <select class="form-control" style="color:black" name="legalitas">
                       <option value="">Pilih</option>
-                      <option value="Milik Sendiri">Milik Sendiri</option>
-                      <option value="Sewa">Sewa</option>
-                      <option value="Lainnya">Lainnya</option>
+                      <option value="milik Sendiri">Milik Sendiri</option>
+                      <option value="sewa">Sewa</option>
+                      <option value="lainnya">Lainnya</option>
                     </select>
                   </div> 
                 </div>

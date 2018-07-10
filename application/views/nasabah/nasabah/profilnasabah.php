@@ -28,7 +28,7 @@
     <!-- END PAGE HEADER-->
     <!-- BEGIN PAGE CONTENT-->
     <div id="page" class="dashboard">                                                              
-      <form role="form" method="post" action="#" >
+      <div id="info-alert"><?=@$this->session->flashdata('msg')?></div>
       <div class="row-fluid">  
           <!-- identitas Nasabah -->
           <div class="span6">
@@ -169,9 +169,17 @@
                     <td >Bidang Usaha</td>
                     <td><?=$isinasabah->bidangusaha?></td>
                   </tr>
+                  <?php
+                    if($isinasabah->berdiri=='0000-00-00'){
+                      $isi="";
+                    }
+                    else{
+                      $isi=$isinasabah->berdiri;
+                    }
+                  ?>
                   <tr>
                     <td >Berdiri Sejak</td>
-                    <td><?=$isinasabah->berdiri?></td>
+                    <td><?=$isi?></td>
                   </tr>
                   <tr>
                     <td >Legalitas</td>
@@ -258,8 +266,7 @@
                   
                 </table>
                 <div class="form-actions">
-                  <button type="submit" class="btn btn-success">Edit Profil</button>
-                  
+                  <a href="<?=base_url()?>nasabah_control/formeditprofil/<?=$isinasabah->idnasabah?>" class="btn btn-success">Edit Profil</a>
                 </div>
 
               </div>
@@ -267,7 +274,7 @@
             <!-- END EXAMPLE TABLE widget-->
           </div> 
       </div> 
-      </form>                 
+                     
     </div>
     <!-- END PAGE CONTENT-->
   </div>

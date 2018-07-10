@@ -10,7 +10,7 @@
 			
 			<!-- BEGIN SIDEBAR MENU -->
             <ul class="sidebar-menu">
-            	<li><a class="" href="<?php echo base_url() ?>Adm_dash"><span class="icon-box"><i class="icon-dashboard"></i></span> Dashboard</a></li>                
+            	<!-- <li><a class="" href="<?php echo base_url() ?>Adm_dash"><span class="icon-box"><i class="icon-dashboard"></i></span> Dashboard</a></li>   -->              
                 <li class="has-sub <?php if($link=='calonnasabah' ||$link=="nasabah"){echo'active';}?>">
                     <a href="javascript:;" class="">
                         <span class="icon-box"> <i class="icon-book"></i></span> Master
@@ -21,16 +21,16 @@
                         <li class="<?php if($link=='nasabah'){echo'active';}?>"><a href="<?=base_url()?>nasabah_control/listnasabah">Nasabah</a></li>
                     </ul>
                 </li>
-                <li class="has-sub">
+                <li class="has-sub <?php if($link=='pengajuan' ||$link=="diterima"||$link=="ditolak"||$link=="pembayaran"){echo'active';}?>">
                     <a href="javascript:;" class="">
                         <span class="icon-box"><i class="icon-cogs"></i></span> Transaksi
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="#">Pengajuan Pembiayaan</a></li>
-                        <li><a class="" href="#">Pembiayaan Diterima</a></li>
-                        <li><a class="" href="#">Pembiayaan Ditolak</a></li>
-                        <li><a class="" href="#">Pembayaran Angsuran</a></li>
+                        <li class="<?php if($link=='pengajuan'){echo'active';}?>"><a href="<?=base_url()?>pembiayaan_control">Pengajuan Pembiayaan</a></li>
+                        <li class="<?php if($link=='diterima'){echo'active';}?>" ><a href="<?=base_url()?>pembiayaan_control/listditerimaadmin">Pembiayaan Diterima</a></li>
+                        <li class="<?php if($link=='ditolak'){echo'active';}?>" ><a href="<?=base_url()?>pembiayaan_control/listditolakadmin">Pembiayaan Ditolak</a></li>
+                       
                     </ul>
                 </li>
                 <li class="has-sub">

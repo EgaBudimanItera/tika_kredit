@@ -55,7 +55,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
       
-      $("#info-alert").fadeTo(2000,50).slideUp(50,function(){
+      $("#info-alert").fadeTo(5000,50).slideUp(50,function(){
           $("#info-alert").slideUp(50);
       });
     })    
