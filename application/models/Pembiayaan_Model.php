@@ -82,6 +82,14 @@ class Pembiayaan_Model extends CI_Model {
      return $query=$this->db->get()->result();
     }
 
+    function list_terimapembiayaanadmin2($dari,$hingga){
+     $this->db->select('*');
+     $this->db->from('pembiayaan');
+     $this->db->join('nasabah','pembiayaan.idnasabah=nasabah.idnasabah');
+     $this->db->where(array('keputusan'=>'Terima','tglreaksi>='=>$dari,'tglreaksi<='=>$hingga));
+     return $query=$this->db->get()->result();
+    }
+
     function ambil_pengajuanpembiayaan($idpembiayaan){
      $this->db->select('*');
      $this->db->from('pembiayaan');

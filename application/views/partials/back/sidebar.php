@@ -45,14 +45,14 @@
                        
                     </ul>
                 </li>
-                <li class="has-sub">
+                <li class="has-sub <?php if($link=="laporanditerima"||$link=="laporanditolak"){echo'active';}?>">
                     <a href="javascript:;" class="">
                         <span class="icon-box"><i class="icon-tasks"></i></span> Laporan
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="#">Laporan Pembiayaan Diterima</a></li>
-                        <li><a class="" href="#">Laporan Pembiayaan Ditolak</a></li>
+                        <li class="<?php if($link=="laporanditerima"){echo'active';}?>"><a class="" href="<?=base_url()?>laporan_control">Laporan Pembiayaan Diterima</a></li>
+                        <li class="<?php if($link=="laporanditolak"){echo'active';}?>"><a class="" href="<?=base_url()?>laporan_control/ditolak">Laporan Pembiayaan Ditolak</a></li>
                     </ul>
                 </li>
                 <?php
@@ -96,14 +96,14 @@
                        
                     </ul>
                 </li>
-                <li class="has-sub">
+                 <li class="has-sub <?php if($link=="laporanditerima"||$link=="laporanditolak"){echo'active';}?>">
                     <a href="javascript:;" class="">
                         <span class="icon-box"><i class="icon-tasks"></i></span> Laporan
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="#">Laporan Pembiayaan Diterima</a></li>
-                        <li><a class="" href="#">Laporan Pembiayaan Ditolak</a></li>
+                        <li class="<?php if($link=="laporanditerima"){echo'active';}?>"><a class="" href="<?=base_url()?>laporan_control">Laporan Pembiayaan Diterima</a></li>
+                        <li class="<?php if($link=="laporanditolak"){echo'active';}?>"><a class="" href="<?=base_url()?>laporan_control/ditolak">Laporan Pembiayaan Ditolak</a></li>
                     </ul>
                 </li>
                 <li class="has-sub <?php if($link=='userlogin'){echo'active';}?>">
