@@ -350,7 +350,7 @@ class Nasabah_Control extends CI_Controller {
       }
       else{
         echo '<script>alert("Maaf, Nama User / Password Anda Salah")</script>';
-        echo'<script>window.location.href="'.base_url().'loginnasabah";</script>';
+        echo'<script>window.location.href="'.base_url().'nasabah_control/loginnasabah";</script>';
       }
     }
 }
