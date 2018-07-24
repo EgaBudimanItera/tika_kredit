@@ -50,4 +50,22 @@ class Userlogin_Control extends CI_Controller {
          redirect(base_url().'userlogin_control/formtambah'); //location
         }
     }
+
+    public function hapus($iduser){
+      $hapus=$this->Userlogin_Model->hapus_userlogin('userId',$iduser);
+      if($hapus){
+        $this->session->set_flashdata(
+          'msg', 
+          '<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a><strong>Success!</strong> Data berhasil dihapus</div>'
+         );
+         redirect(base_url().'userlogin_control/'); //location 
+      }
+      lse{
+         $this->session->set_flashdata(
+          'msg', 
+          '<div class="alert alert-warning"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a><strong>Warning!</strong> Data gagal dihapus!</div>'
+         );
+         redirect(base_url().'userlogin_control/formtambah'); //location
+        }
+    }
 }

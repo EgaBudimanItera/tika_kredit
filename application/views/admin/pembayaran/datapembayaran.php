@@ -57,7 +57,7 @@
                     <th class="hidden-phone">ID Pembayaran</th>
                     <th class="hidden-phone">Tanggal Pembayaran</th>
                     <th class="hidden-phone">Jumlah Pembayaran</th>
-                    <th class="hidden-phone">Aksi</th>
+                    <!-- <th class="hidden-phone">Aksi</th> -->
                   </tr>
                 </thead>
                 <tbody>
@@ -71,11 +71,11 @@
                     <td><?=$isi->idbayar?></td>
                     <td><?=$isi->tglbayar?></td>
                     <td><?php echo number_format($isi->angsuran)?></td>
-                    <td>
+                    <!-- <td>
                       <a class="btn btn-primary" href="<?=base_url()?>pembiayaan_control/detailpengajuanadmin/<?=$isi->idpembiayaan?>" title="Detail"><i class="icon-eye-open"></i></a>
                       <a class="btn btn-warning" href="<?=base_url()?>pembiayaan_control/download/<?=$isi->file?>" title="Download File Persyaratan"><i class="icon-download"></i></a>
                       <a class="btn btn-success" href="<?=base_url()?>pembiayaan_control/formsurvey/<?=$isi->idpembiayaan?>" title="Atur Jadwal Survey"><i class="icon-user" ></i></a>
-                    </td>
+                    </td> -->
                   </tr>
                   <?php
                     $totalbayar=$totalbayar+ $isi->angsuran;  
