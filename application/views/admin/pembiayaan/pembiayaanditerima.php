@@ -40,7 +40,7 @@
              
              <div id="info-alert"><?=@$this->session->flashdata('msg')?></div>
 
-              <table class="table table-striped table-bordered" id="sample_1">
+              <table class="table table-bordered" id="sample_1">
                 <thead>
                   <tr>
                     <th class="hidden-phone">No</th>
@@ -55,9 +55,27 @@
                 <tbody>
                   <?php
                     $no=1;
+                    $a=date('Y-m-d');
+                    $skr=new DateTime($a);
                     foreach ($isipembiayaan as $isi ) {
+                      $tempo=new DateTime($isi->bayarnext);
+                      $beda  = $tempo->diff($skr)->format('%a');
+                      if($a>$isi->bayarnext){
+                        $beda=$beda;
+                      }
+                      else{
+                        $beda=$beda*-1;
+                      }
+                      if($beda>7){
+                        $warna='warning';
+                      }else if($beda>=0 && $beda<=7){
+                         $warna='success';
+                      }else{
+                         $warna='';
+                      }
                   ?>
-                  <tr>
+                  
+                  <tr class="<?=$warna?>">
                     <td><?=$no++;?></td>
                     <td><?=$isi->idpembiayaan?></td>
                     <td><?=$isi->tglpengajuan?></td>
@@ -66,7 +84,7 @@
                     <td><?=$isi->waktu?></td>
                     <td>
                       <!-- <a class="btn btn-primary" href="<?=base_url()?>pembiayaan_control/detailditerima/<?=$isi->idpembiayaan?>">Detail Pembiayaan</a> -->
-                      <a href="<?=base_url()?>pembayaran_control/listpembayaranadmin/<?=$isi->idpembiayaan?>" class="btn btn-warning">Pembayaran</a>
+                      <a href="<?=base_url()?>pembayaran_control/listpembayaranadmin/<?=$isi->idpembiayaan?>" class="btn btn-warning">Detail Pembayaran</a>
                     </td>
                   </tr>
                   <?php    

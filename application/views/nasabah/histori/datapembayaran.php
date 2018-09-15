@@ -40,14 +40,7 @@
             </div>
             <div class="widget-body">
              <div id="info-alert"><?=@$this->session->flashdata('msg')?></div>
-             <?php
-              if($sisapembayaran->statuslunas=='Belum Lunas'){
-            ?>
-            <div><a href="<?=base_url()?>pembayaran_control/formtambahpembayaran/<?=$sisapembayaran->idpembiayaan?>" class="btn btn-primary">Tambah Pembayaran</a></div>
-             <br>
-            <?php
-              }
-             ?>
+             
              
               <table class="table table-striped table-bordered" id="sample_1">
                 <thead>

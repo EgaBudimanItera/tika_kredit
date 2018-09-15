@@ -48,6 +48,7 @@ class Pembayaran_Control extends CI_Controller {
       $data=array(
         'idbayar'=>$this->Pembayaran_Model->kode_pembayaran(),
         'idpembiayaan'=>$idpembiayaan,
+        'namanasabah'=>$namanasabah,
         'tglbayar'=>date('Y-m-d'),
         'bayarke'=>$bayarke,
         'jumlah'=>$this->input->post('angsuran',true),

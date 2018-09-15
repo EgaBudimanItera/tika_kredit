@@ -17,6 +17,15 @@ class Laporan_Control extends CI_Controller {
       );
       $this->load->view('partials/back/wrapper',$data);
     }
+    //pages back
+    public function ditolak(){
+      $data=array(
+        'page'=>'admin/laporan/formditolak',
+        'link' => 'laporanditolak',
+        'script'=>'',
+      );
+      $this->load->view('partials/back/wrapper',$data);
+    }
 
     public function cetakditerima(){
       $daritanggal=date_format(date_create($this->input->post('daritanggal',true)),"Y-m-d");
@@ -27,5 +36,16 @@ class Laporan_Control extends CI_Controller {
         'isilaporan'=>$this->Pembiayaan_Model->list_terimapembiayaanadmin2($daritanggal,$hinggatanggal),
       );
       $this->load->view('admin/laporan/diterima',$data);
+    }
+
+    public function cetakditolak(){
+      $daritanggal=date_format(date_create($this->input->post('daritanggal',true)),"Y-m-d");
+      $hinggatanggal=date_format(date_create($this->input->post('hinggatanggal',true)),"Y-m-d");
+      $data=array(
+        'daritanggal'=>$daritanggal,
+        'hinggatanggal'=>$hinggatanggal,
+        'isilaporan'=>$this->Pembiayaan_Model->list_tolakpembiayaanadmin2($daritanggal,$hinggatanggal),
+      );
+      $this->load->view('admin/laporan/ditolak',$data);
     }
 }

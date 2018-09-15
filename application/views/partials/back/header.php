@@ -33,7 +33,7 @@
             <div class="container-fluid">
                 <!-- BEGIN LOGO -->
                 <a class="brand" href="#">
-                    <img src="<?php echo base_url() ?>assets/img/logo2.png" alt="Admin" />
+                    <img src="<?php echo base_url() ?>assets/img/logo4.jpg" alt="Admin" />
                 </a>
                 <!-- END LOGO -->
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->

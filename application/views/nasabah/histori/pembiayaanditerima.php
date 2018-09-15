@@ -56,9 +56,26 @@
                 <tbody>
                   <?php
                     $no=1;
+                    $a=date('Y-m-d');
+                    $skr=new DateTime($a);
                     foreach ($isipembiayaan as $isi ) {
+                      $tempo=new DateTime($isi->bayarnext);
+                      $beda  = $tempo->diff($skr)->format('%a');
+                      if($a>$isi->bayarnext){
+                        $beda=$beda;
+                      }
+                      else{
+                        $beda=$beda*-1;
+                      }
+                      if($beda>7){
+                        $warna='warning';
+                      }else if($beda>=0 && $beda<=7){
+                         $warna='success';
+                      }else{
+                         $warna='';
+                      }
                   ?>
-                  <tr>
+                  <tr class="<?=$warna?>">
                     <td><?=$no++;?></td>
                     <td><?=$isi->idpembiayaan?></td>
                     <td><?=$isi->tglpengajuan?></td>

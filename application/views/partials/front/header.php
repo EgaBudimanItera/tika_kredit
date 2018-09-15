@@ -89,7 +89,7 @@
         <a href="index.php" class="navbar-brand">         
         <!-- Logo -->
       <div id="logo"> 
-      <img id="default-logo" src="" style="height:50px;"> </div>
+      <img id="default-logo" src="<?=base_url()?>assets/assets/logo.jpg" style="height:50px;"> </div>
         </a> 
         
       </div>
@@ -99,9 +99,9 @@
         
           <li class="dropdown <?php if($link=='beranda' ||$link==""){echo'active';}?>"> <a href="<?=base_url()?>">Beranda</a>
           </li>
-          <li class="dropdown "> <a href="#">Tentang Kami</a>
+          <li class="dropdown <?php if($link=='sejarah'){echo'active';}?>"> <a href="<?=base_url()?>nasabah_control/sejarah">Sejarah Perusahaan</a>
           </li>
-          <li class="dropdown "> <a href="#">Bantuan</a>
+          <li class="dropdown <?php if($link=='syarat'){echo'active';}?>"> <a href="<?=base_url()?>nasabah_control/syarat">Persyaratan Pembiayaan</a>
           </li>
           
           <li class="dropdown <?php if($link=='pendaftaran'){echo'active';}?>"> <a href="<?=base_url()?>nasabah_control/pendaftaran">Pendaftaran Nasabah Baru</a>

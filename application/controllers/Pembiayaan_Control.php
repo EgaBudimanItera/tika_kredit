@@ -125,10 +125,7 @@ class Pembiayaan_Control extends CI_Controller {
       $config ['max_size'] = '10000';
       $config ['file_name'] = 'S_'.$idnasabah.date('mY');
       $this->load->library('upload', $config);  //File Uploading library
-      // $this->upload->do_upload('gambar');  // input name which have to upload 
-      // $file=$this->upload->data();   //variable which store the path
-      // print_r($file);
-      // exit();
+     
 
       if ( ! $this->upload->do_upload('gambar')){
         $error = array('error' => $this->upload->display_errors());
@@ -240,7 +237,7 @@ class Pembiayaan_Control extends CI_Controller {
       $data=array(
         'keputusan'=>$keputusan,
         'bayarpertama'=>$bayarpertama,
-        'bayarnext'=>$bayarnext,
+        'bayarnext'=>$bayarpertama,
         'totalpembayaran'=>$total,
         'sisapembayaran'=>$total,
         'alasantolak'=>$alasantolak,

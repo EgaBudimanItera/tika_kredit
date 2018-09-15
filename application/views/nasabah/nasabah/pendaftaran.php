@@ -43,7 +43,7 @@
                   </div>
                   <div class="form-group">
                     <label for="subject" accesskey="S">Nomor Induk Kependudukan*</label>
-                    <input name="nik" type="number" value="" class="form-control" style="color:black" required />
+                    <input name="nik" type="text" value="" maxlength="18" class="form-control" style="color:black" required />
                   </div>
                   <div class="form-group">
                     <label for="subject" accesskey="S">Tempat Lahir*</label>
@@ -194,18 +194,17 @@
                     <input name="telpusaha" type="number" class="form-control" style="color:black"/>
                   </div>
                   <div class="form-group">
-                    <label for="subject" accesskey="S">Bidang Usaha</label>
-                    <input name="bidangusaha" type="text" class="form-control" style="color:black"/>
-                  </div>
-                  <div class="form-group">
                     <label for="subject" accesskey="S">Tempat Usaha</label>
                     <select class="form-control" style="color:black" name="legalitas">
                       <option value="">Pilih</option>
-                      <option value="milik Sendiri">Milik Sendiri</option>
-                      <option value="sewa">Sewa</option>
-                      <option value="lainnya">Lainnya</option>
+                      <option value="PT">PT</option>
+                      <option value="Yayasan">Yayasan</option>
+                      <option value="Koperasi">Koperasi</option>
+                      <option value="CV">CV</option>
+                      <option value="Lainnya">Lainnya</option>
                     </select>
                   </div> 
+                  <!-- 'PT','Yayasan','Koperasi','CV','Lainnya'-->
                 </div>
                 <h6 class="lined-heading"></h6>
                 <div class="form-group">

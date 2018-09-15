@@ -3,14 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Laporan Pembiayaan Diterima</title>
+<title>Laporan Pembiayaan Ditolak</title>
 </head>
 <body onload="window.print()" background="<?=base_url()?>/assets/bgh.jpg" >
 	<table width="100%">
 		<tr>
 			<td>
 				<center>
-					<h4>PT Bank Pembiayaan Rakyat Syariah Metro Madani<br/>Periode <?=date("d F Y", strtotime($daritanggal));?> - <?=date("d F Y", strtotime($hinggatanggal));?><br>Laporan Pembiayaan Diterima</h4>
+					<h4>PT Bank Pembiayaan Rakyat Syariah Metro Madani<br/>Periode <?=date("d F Y", strtotime($daritanggal));?> - <?=date("d F Y", strtotime($hinggatanggal));?><br>Laporan Pembiayaan Ditolak</h4>
 				</center>
 			</td>
 		</tr>
@@ -26,8 +26,10 @@
 	        <td ><div style="width: 150px;"><center><b>Plafond (Rp)</b></center></div></td>
 	        <td ><div style="width: 150px;"><center><b>Margin (Rp)</b></center></div></td>
 	        <td ><div style="width: 150px;"><center><b>Waktu Pinjam (Bulan)</b></center></div></td>
-	        <td ><div style="width: 150px;"><center><b>Angsuran (Rp)</b></center></div></td>
+	       
 	        <td ><div style="width: 100px;"><center><b>Jenis Pinjaman</b></center></div></td>
+	         <td ><div style="width: 150px;"><center><b>Alasan Penolakan</b></center></div></td>
+	    
 	   	<?php
 	   		$no=1;
 	   		$total=0;
@@ -43,8 +45,9 @@
 	   		<td align="right"><?php echo number_format($isi->jumlah)?></td>
 	   		<td align="right"><?php echo number_format($margin)?></td>
 	   		<td align="right"><?=$isi->waktu?></td>
-	   		<td align="right"><?php echo number_format($isi->angsuran)?></td>
+	   		
 	   		<td><?=$isi->jenis?></td>
+	   		<td><?=$isi->alasantolak?></td>
 	   	</tr>
 	   	<?php
 	   		$total=$total+$isi->jumlah;

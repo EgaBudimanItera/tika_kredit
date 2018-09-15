@@ -40,6 +40,24 @@ class Nasabah_Control extends CI_Controller {
       $this->load->view('partials/front/wrapper', $data);
     }
 
+    public function syarat(){
+      $data = array(
+            'page' => 'nasabah/nasabah/syarat',
+            'link' => 'syarat',
+            'script'=>'',     
+      );
+      $this->load->view('partials/front/wrapper', $data);
+    }
+
+    public function sejarah(){
+      $data = array(
+            'page' => 'nasabah/nasabah/sejarah',
+            'link' => 'sejarah',
+            'script'=>'',     
+      );
+      $this->load->view('partials/front/wrapper', $data);
+    }
+
     //pages back
     public function listcalonnasabah(){
       $data = array(
@@ -334,6 +352,7 @@ class Nasabah_Control extends CI_Controller {
       $where=array(
             'namauser'=>$namauser,
             'password'=>$password,
+            'status'=>'sah'
       );
       $cek=$this->Nasabah_Model->cek_login($where)->num_rows(); 
       if($cek!=0){
@@ -349,7 +368,7 @@ class Nasabah_Control extends CI_Controller {
         echo'<script>window.location.href="'.base_url().'nasabah_control/profilnasabah";</script>';
       }
       else{
-        echo '<script>alert("Maaf, Nama User / Password Anda Salah")</script>';
+        echo '<script>alert("Maaf, Nama User / Password Anda Salah / anda belum di terima sebagai nasabah")</script>';
         echo'<script>window.location.href="'.base_url().'nasabah_control/loginnasabah";</script>';
       }
     }

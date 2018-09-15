@@ -60,7 +60,7 @@ class Userlogin_Control extends CI_Controller {
          );
          redirect(base_url().'userlogin_control/'); //location 
       }
-      lse{
+      else{
          $this->session->set_flashdata(
           'msg', 
           '<div class="alert alert-warning"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a><strong>Warning!</strong> Data gagal dihapus!</div>'

@@ -96,56 +96,7 @@
             <!-- END EXAMPLE TABLE widget-->
           </div>
         </div> 
-       <!--  <div class="row-fluid">
-          <div class="span12">
-           
-            <div class="widget">
-              <div class="widget-title">
-                  <h4><i class="icon-reorder"></i>Fasilitas Pembiayaan Kredit dari Lembaga Lain</h4>
-                  <span class="tools">
-                      <a href="javascript:;" class="icon-chevron-down"></a>
-                      <a href="javascript:;" class="icon-remove"></a>
-                  </span>
-              </div>
-              <div class="widget-body">
-                <div>
-                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#detailkreditlain">Tambahkan Kredit Lain</a>
-                </div>
-                
-                <br>
-                <div id="tampilkreditlain">
-
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>  -->
-       <!--  <div class="row-fluid">
-          <div class="span12">
-           
-            <div class="widget">
-              <div class="widget-title">
-                  <h4><i class="icon-reorder"></i>Jaminan Yang Akan Diserahkan</h4>
-                  <span class="tools">
-                      <a href="javascript:;" class="icon-chevron-down"></a>
-                      <a href="javascript:;" class="icon-remove"></a>
-                  </span>
-              </div>
-              <div class="widget-body">
-                <div>
-                   <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#detailjaminan">Tambahkan Jaminan</a>
-                </div>
-               
-                <br>
-                <div id="tampiljaminan">
-
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>  -->
+       
         <div class="row-fluid">
           <div class="span12">
             
@@ -170,32 +121,7 @@
             
           </div>
         </div> 
-        <!-- <div class="row-fluid">
-          <div class="span12">
-            
-            <div class="widget">
-              <div class="widget-title">
-                  <h4><i class="icon-reorder"></i>Persyaratan</h4>
-                  <span class="tools">
-                      <a href="javascript:;" class="icon-chevron-down"></a>
-                      <a href="javascript:;" class="icon-remove"></a>
-                  </span>
-              </div>
-              <div class="widget-body">
-                <div>
-                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#detailpersyaratan">Tambahkan Persyaratan</a>
-                </div>
-                
-                <br>
-                <div id="tampilsyarat">
-
-                </div>  
-
-              </div>
-            </div>
-            
-          </div>
-        </div>  -->
+        
         <div class="row-fluid">
           <div class="span12">
             <!-- BEGIN EXAMPLE TABLE widget-->
