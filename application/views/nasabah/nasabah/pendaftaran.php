@@ -195,13 +195,12 @@
                   </div>
                   <div class="form-group">
                     <label for="subject" accesskey="S">Tempat Usaha</label>
-                    <select class="form-control" style="color:black" name="legalitas">
+                    <select class="form-control" style="color:black" name="tempatusaha">
                       <option value="">Pilih</option>
-                      <option value="PT">PT</option>
-                      <option value="Yayasan">Yayasan</option>
-                      <option value="Koperasi">Koperasi</option>
-                      <option value="CV">CV</option>
-                      <option value="Lainnya">Lainnya</option>
+                      <option value="milik sendiri">Milik Sendiri</option>
+                      <option value="sewa">Sewa</option>
+                     
+                      <option value="lainnya">Lainnya</option>
                     </select>
                   </div> 
                   <!-- 'PT','Yayasan','Koperasi','CV','Lainnya'-->

@@ -36,7 +36,11 @@
               </span>
             </div>
             <div class="widget-body">
-              
+              <p>
+                ini adalah kata2 nya
+              </p>
+              <br>
+              <center><img src="<?=base_url()?>assets/botak.jpeg" width="50%" height="20%"></center>
             </div>
           </div>
           <!-- END SITE VISITS PORTLET-->

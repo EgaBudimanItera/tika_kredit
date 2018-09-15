@@ -10,7 +10,7 @@
             
             <!-- BEGIN SIDEBAR MENU -->
             <ul class="sidebar-menu">
-                <!-- <li><a class="" href="<?php echo base_url() ?>Adm_dash"><span class="icon-box"><i class="icon-dashboard"></i></span> Dashboard</a></li>    -->             
+                <li class="<?php if($link=='' ||$link=="dashboard"){echo'active';}?>"><a class="" href="<?php echo base_url() ?>dashboard/nasabah"><span class="icon-box"><i class="icon-dashboard"></i></span> Dashboard</a></li>           
                 <li class="has-sub <?php if($link=='calonnasabah' ||$link=="nasabah"){echo'active';}?>">
                     <a href="javascript:;" class="">
                         <span class="icon-box"> <i class="icon-book"></i></span> Master

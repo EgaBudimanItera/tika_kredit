@@ -70,6 +70,7 @@ class Nasabah_Control extends CI_Controller {
       $this->load->view('partials/back/wrapper', $data);
     }
 
+
     public function detailcalonnasabah($idnasabah){
       $data = array(
             'page' => 'admin/nasabah/detailcalonnasabah',
@@ -365,7 +366,7 @@ class Nasabah_Control extends CI_Controller {
 
         $this->session->set_userdata($data_session);
         echo '<script>alert("Selamat Datang "'.$this->Nasabah_Model->cek_login($where)->row()->nama.')</script>';
-        echo'<script>window.location.href="'.base_url().'nasabah_control/profilnasabah";</script>';
+        echo'<script>window.location.href="'.base_url().'dashboard/nasabah";</script>';
       }
       else{
         echo '<script>alert("Maaf, Nama User / Password Anda Salah / anda belum di terima sebagai nasabah")</script>';
