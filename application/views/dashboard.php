@@ -36,8 +36,59 @@
               </span>
             </div>
             <div class="widget-body">
+              <div class="row-fluid metro-overview-cont">
+                <div data-desktop="span3" data-tablet="span3" class="responsive span3">
+                  <div class="metro-overview turquoise-color clearfix">
+                    <div class="display">
+                      <i class="icon-group"></i>
+                      <div class="percent"></div>
+                    </div> 
+                    <div class="details">
+                      <div class="numbers"><?=$jumlahnasabah?></div>
+                      <div class="title">Jumlah Nasabah</div>
+                    </div>
+                  </div>   
+                </div>  
+                <div data-desktop="span3" data-tablet="span3" class="responsive span3">
+                  <div class="metro-overview red-color clearfix">
+                    <div class="display">
+                      <i class="icon-briefcase"></i>
+                      <div class="percent"></div>
+                    </div> 
+                    <div class="details">
+                      <div class="numbers"><?=$jumlahcalonnasabah?></div>
+                      <div class="title">Jumlah Calon Nasabah</div>
+                    </div>
+                  </div>   
+                </div> 
+                <div data-desktop="span3" data-tablet="span3" class="responsive span3">
+                  <div class="metro-overview green-color clearfix">
+                    <div class="display">
+                      <i class="icon-leaf"></i>
+                      <div class="percent"><?php echo number_format($jumlpembiayaanditerima/$jumlahpembiayaan*100,2,',','').'%'?></div>
+                    </div> 
+                    <div class="details">
+                      <div class="numbers"><?=$jumlpembiayaanditerima?></div>
+                      <div class="title">Jumlah Pembiayaan Diterima</div>
+                    </div>
+                  </div>   
+                </div> 
+                <div data-desktop="span3" data-tablet="span3" class="responsive span3">
+                  <div class="metro-overview purple-color clearfix">
+                    <div class="display">
+                      <i class="icon-heart"></i>
+                      <div class="percent"><?php echo number_format($jumlpembiayaanditolak/$jumlahpembiayaan*100,2,',','').'%'?></div>
+                    </div> 
+                    <div class="details">
+                      <div class="numbers"><?=$jumlpembiayaanditolak?></div>
+                      <div class="title">Jumlah Pembiayaan Ditolak</div>
+                    </div>
+                  </div>   
+                </div> 
+              </div>
+
               <p>
-                ini adalah kata2 nya
+                Alur Permohonan Kredit PT Bank Pembiayaan Rakyat Syariah Metro Madani
               </p>
               <br>
               <center><img src="<?=base_url()?>assets/botak.jpeg" width="50%" height="20%"></center>

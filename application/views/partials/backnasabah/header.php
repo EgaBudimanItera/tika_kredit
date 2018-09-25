@@ -49,9 +49,10 @@
                         <!-- BEGIN USER LOGIN DROPDOWN -->
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="username">Nasabah</span>
+                                <span class="username"><?php echo $this->session->userdata('nama');?></span>
                                 <b class="caret"></b>
                             </a>
+                            
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo base_url() ?>secure/formubahpasswordnasabah"><i class="icon-user"></i> Password</a></li>
                                 <li><a href="<?=base_url()?>secure/logoutnasabah"><i class="icon-key"></i> Log Out</a></li>

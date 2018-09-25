@@ -32,11 +32,25 @@ class Nasabah_Model extends CI_Model {
          return $query=$this->db->get()->result();
     }
 
+    function jumlah_calonnasabah(){
+         $this->db->select('*');
+         $this->db->from('nasabah');
+         $this->db->where(array('status'=>'tidak'));
+         return $query=$this->db->get();
+    }
+
     function list_nasabah(){
          $this->db->select('*');
          $this->db->from('nasabah');
          $this->db->where(array('status'=>'sah'));
          return $query=$this->db->get()->result();
+    }
+
+    function jumlah_nasabah(){
+         $this->db->select('*');
+         $this->db->from('nasabah');
+         $this->db->where(array('status'=>'sah'));
+         return $query=$this->db->get();
     }
 
     function ambil_nasabah($param_kode, $kode){

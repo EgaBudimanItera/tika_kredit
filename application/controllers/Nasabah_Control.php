@@ -221,7 +221,7 @@ class Nasabah_Control extends CI_Controller {
       if($daftar){
         $this->session->set_flashdata(
           'msg', 
-          '<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a><strong>Success!</strong> Data berhasil disimpan! Silahkan tunggu verifikasi dari kantor !</div>'
+          '<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a><strong>Success!</strong> Data berhasil disimpan! Silahkan tunggu verifikasi dari kantor dalam 1x24 jam !</div>'
         );
         redirect(base_url().'nasabah_control/pendaftaran'); //location
       } 
@@ -361,7 +361,7 @@ class Nasabah_Control extends CI_Controller {
             'namauser' => $namauser,
             'idnasabah'=>$this->Nasabah_Model->cek_login($where)->row()->idnasabah,
             'status' => "login",
-            
+            'nama'=>$this->Nasabah_Model->cek_login($where)->row()->nama,
         );
 
         $this->session->set_userdata($data_session);

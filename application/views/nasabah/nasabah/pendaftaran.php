@@ -69,12 +69,12 @@
                     <label for="subject" accesskey="S">No Telp/HP*</label>
                     <input class="form-control" name="telp" type="number" required="" style="color:black"/>
                   </div>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label for="subject" accesskey="S">Foto Pemohon</label>
                     <input type="file" class="file"  name="foto1" id="foto1" style="color:black">
-                  </div>
+                  </div> -->
                 </div>  
-                <h6 class="lined-heading"></h6>
+                <!-- <h6 class="lined-heading"></h6>
                 <div class="form-group">
                   <h4 class=""><span>B. Data Keluarga Lain</span></h4>
                   <div class="form-group">
@@ -105,16 +105,16 @@
                     <label for="subject" accesskey="S">Foto Suami/Istri/Orang Tua</label>
                     <input type="file" class="file"  name="foto2" id="foto2" style="color:black" >
                   </div>
-                </div> 
-                <h6 class="lined-heading"></h6>
+                </div> --> 
+                <!-- <h6 class="lined-heading"></h6>
                 <div class="form-group">
                   <h4 class=""><span>C.Data Tanggungan</span></h4>
                   <div class="form-group">
                     <label for="subject" accesskey="S">Jumlah Tanggungan</label>
                     <input name="tanggungan" type="number" value="" class="form-control" style="color:black" />
                   </div>
-                </div> 
-                <h6 class="lined-heading"></h6>
+                </div> --> 
+                <!-- <h6 class="lined-heading"></h6>
                 <div class="form-group">
                   <h4 class=""><span>D.Data Kepemilikan Rumah</span></h4>
                   <div class="form-group">
@@ -126,8 +126,8 @@
                       <option value="sewa">Sewa</option>
                     </select>
                   </div>
-                </div> 
-                <h6 class="lined-heading"></h6>
+                </div>  -->
+                <!-- <h6 class="lined-heading"></h6>
                 <div class="form-group">
                   <h4 class=""><span>E.Keluarga Lain Yang Mudah Dihubungi (Tidak Serumah)</span></h4>
                   <div class="form-group">
@@ -146,10 +146,10 @@
                     <label for="subject" accesskey="S">Hubungan</label>
                      <input class="form-control"  name="hubungan13" style="color:black" type="text"/>
                   </div>
-                </div> 
+                </div> --> 
               </div> 
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <div class="form-group">
                 <h4 class="lined-heading"><span>Jenis Usaha</span></h4>
                 <div class="form-group">
@@ -203,7 +203,7 @@
                       <option value="lainnya">Lainnya</option>
                     </select>
                   </div> 
-                  <!-- 'PT','Yayasan','Koperasi','CV','Lainnya'-->
+                   'PT','Yayasan','Koperasi','CV','Lainnya'
                 </div>
                 <h6 class="lined-heading"></h6>
                 <div class="form-group">
@@ -262,7 +262,7 @@
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>  -->
           </div>
           <!-- <div class="row">
             <div class="col-md-6">
