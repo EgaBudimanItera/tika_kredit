@@ -25,7 +25,7 @@ class Dashboard extends CI_Controller {
     //pages backnasabah
     public function nasabah(){
       $data = array(
-        'page'=>'dashboard',
+        'page'=>'dashboardnasabah',
         'link'=>'dashboard',
       );
       $this->load->view('partials/backnasabah/wrapper',$data);
